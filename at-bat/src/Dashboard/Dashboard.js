@@ -1,17 +1,15 @@
 import React, {Component} from 'react';
 
-class Dashboard extends Component {
+function Dashboard(props) {
    
 
-    strike = () => {
-        this.props.strike = this.props.strike + 1;
-    }
+    
 
 
     render() {
         return (
             <div>
-               <button onClick={this.strike}>Strike</button>
+               <button onClick={props.hitHandler}>Strike</button>
                <button>Ball</button>
                <button>Foul</button> 
                <button>Hit</button>

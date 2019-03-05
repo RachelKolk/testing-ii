@@ -8,12 +8,12 @@ import Display from '../Display/Display.js';
 describe('<Dashboard />', () => {
     describe('strike', () => {
         it('increases strikes', () => {
-            const {getByText} = render(<Display />);
+            const {getByText} = render(<Dashboard />);
 
             const strikeButton = getByText(/Strike/i);
             fireEvent.click(strikeButton);
 
-            expect(this.state.strike).toBe(1);
+            expect().toBe(1);
         })
 
         
