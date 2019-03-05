@@ -34,7 +34,7 @@ class Display extends Component {
         if(this.state.strikes < 2) {
             this.setState({
                 ...this.state,
-                balls: this.state.strikes = 1
+                strikes: this.state.strikes + 1
             });
         } else {
             this.setState({

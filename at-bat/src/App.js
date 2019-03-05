@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-import Dashboard from './Dashboard/Dashboard.js';
+import Display from './Display/Display.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Dashboard />
+        <Display />
       </div>
     );
   }
