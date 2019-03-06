@@ -24,7 +24,7 @@ class Display extends Component {
             });
         } else {
             this.setState({
-                balls:0,
+                balls: 0,
                 strikes: 0
             });
         }
@@ -63,8 +63,10 @@ class Display extends Component {
                    <h2>Baseball Scoreboard</h2>
 
                    <div>
-                       <h2 data-testid="strikes-display">Strikes: {this.state.strikes}</h2>
-                       <h2>Balls: {this.state.balls}</h2>
+                       <h2>Strikes: </h2>
+                       <span data-testid="s-display">{this.state.strikes}</span>
+                       <h2>Balls: </h2>
+                       <span data-testid="b-display">{this.state.balls}</span>
                    </div>
 
                    <Dashboard  
