@@ -63,7 +63,7 @@ class Display extends Component {
                    <h2>Baseball Scoreboard</h2>
 
                    <div>
-                       <h2>Strikes: {this.state.strikes}</h2>
+                       <h2 data-testid="strikes-display">Strikes: {this.state.strikes}</h2>
                        <h2>Balls: {this.state.balls}</h2>
                    </div>
 

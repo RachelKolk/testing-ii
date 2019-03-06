@@ -1,5 +1,5 @@
 import React from 'react';
-import {render, fireEvent} from 'react-testing-library';
+import {render, fireEvent } from 'react-testing-library';
 import 'jest-dom/extend-expect';
 
 import Dashboard from './Dashboard';
@@ -47,5 +47,19 @@ describe('<Dashboard />', () => {
             expect(hitButton).toBeInTheDocument();
         });
     });
+
+    describe('strike', () => {
+        it('increases strikes by one when clicked', () => {
+            const {getByText} = render(<Display />);
+            const strikeHandler = getByText(/strikes:/i);
+
+
+            const strikeButton = getByText(/strike/i);
+            fireEvent.click(strikeButton);
+
+            expect(strikeHandler).toEqual(1);
+        })
+        
+    })
     
 });
